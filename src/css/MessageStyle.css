@@ -1,0 +1,57 @@
+.recieved-messages {
+    padding: 20px;
+}
+
+.recieved-text-message {
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    margin-top: 0px;
+   
+}
+
+.style-sender-time {
+    text-align: left;
+    color: lightgray;
+    margin-top: 0px;
+
+}
+
+/* .align-center {
+    display: flex;
+    justify-content: center;
+} */
+
+table {
+    background-color: lightgray;
+    padding:20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+#text-field-message {
+    background-color: lightgrey;
+    width: 100%;
+}
+#text-field-message .MuiFormControl-root {
+    width: 100%;
+}
+#text-field-message #outlined-basic {
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+
+.messages-holder {
+    margin-bottom: 50px;
+}
+
+.input-holder {
+    position: fixed;
+    bottom: 0;
+}
+
+.load-more-button-holder {
+    text-align: center;
+}
