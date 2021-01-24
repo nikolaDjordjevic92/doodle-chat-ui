@@ -41,7 +41,7 @@ class App extends Component {
   };
 
   getMessages = (id) => {
-    axios.get(`http://192.168.0.12:8080/messages/${id ? id : ''}`)
+    axios.get(`${process.env.REACT_APP_BACKEND_BASE_URL}/messages/${id ? id : ''}`)
     .then(res => {
       const topTenMessages = res.data;
       if (topTenMessages.length < 10) {
@@ -140,7 +140,7 @@ class App extends Component {
               </div>
               <br/><br/>
               
-              <SockJsClient url='http://192.168.0.12:8080/websocket-chat/'
+              <SockJsClient url={`${process.env.REACT_APP_BACKEND_BASE_URL}/websocket-chat/`}
                             topics={['/topic/user']}
                             onConnect={() => {
                                 console.log('connected');
